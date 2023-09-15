@@ -1,0 +1,5 @@
+function(setup target_name)
+  target_compile_features(${target_name} PRIVATE c_std_23)
+  set_target_properties(${target_name} PROPERTIES C_STANDARD_REQUIRED true C_EXTENSIONS false)
+  target_compile_options(${target_name} PRIVATE -Weverything -Wno-pre-c2x-compat -Wno-declaration-after-statement)
+endfunction()
