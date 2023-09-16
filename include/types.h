@@ -21,11 +21,11 @@ typedef i64 isize;
 typedef void *opaque;
 
 typedef char *cstr;
-typedef wchar_t *wcstr;
+typedef int *wcstr;
 
 typedef opaque OpaqueFunctionPointer;
 
-#define U32_MIN (-2147483647i32 - 1)
+#define U32_MIN (-2147483647 - 1)
 
 typedef enum {
   RESULT_ERRORR = U32_MIN,
